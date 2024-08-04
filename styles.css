@@ -34,6 +34,10 @@
 	
 }
 
+.link__botao{
+	border: none;
+	background-color: #ffff;
+}
 
 .header__descricao{
 	font-family: var(--inter);
@@ -44,3 +48,4 @@
 .header{
 	padding: 3em;
 }
+
