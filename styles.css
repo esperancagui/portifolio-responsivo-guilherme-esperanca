@@ -2,13 +2,15 @@
 
 :root {
 	--fundo: #ffff;
+	--destaque: rgb(82, 175, 238);
 	--inter : "inter";
 }
+
 
 .header__introducao{
 	font-family: var(--inter);
 	font-weight: 700;
-	font-size:20px;
+	font-size:23px;
 	margin: 0.5em 0em;
 	
 	
@@ -34,18 +36,52 @@
 	
 }
 
-.link__botao{
-	border: none;
-	background-color: #ffff;
+.imagem{
+	width: 50px;
 }
+
 
 .header__descricao{
 	font-family: var(--inter);
 	margin: 0.5em 0em;
-	font-size: 20px;
+	font-size: 23px;
 }
 
 .header{
 	padding: 3em;
+}
+
+.projetos{
+	text-align: center;
+}
+
+.projetos__link{
+	text-decoration: none;
+	color: black;
+}
+
+.projetos__link:hover{
+	color: var(--destaque);
+}
+
+.projetos__titulo{
+	font-family: var(--inter);
+	font-weight: 700;
+	font-size: 24px;
+	padding-bottom: 1.5em;
+}
+
+.projetos__container__mobile{
+	margin: 0em 1.5em;
+}
+
+.projetos__container__imagem{
+	padding: 0.5em;
+}
+
+.projetos__imagem{
+	padding: 1em;
+	width: 80vw;
+	margin-bottom:3em;
 }
 
