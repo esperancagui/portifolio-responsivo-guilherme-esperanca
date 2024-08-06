@@ -7,12 +7,12 @@
     <title>Guilherme Esperança</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -30,27 +30,51 @@
                 </div>
                 <ul class="links">
                     <li>
-                            <a href="#" class="link__botao"><img src="img/github.png" alt="github" class="imagem"></a>
-                    </li>
-                    <li>
-                            <a href="#" class="link__botao"><img src="img/linkedin.png" alt="linkedin" class="imagem"></a>
-                    </li>
-                    <li>
-                        <a href="#" class="link__botao"><img src="img/curriculo.png" alt="curriculo" class="imagem"></a>
-                    </li>
+                        <a href="#" class="link__botao">
+                            <button class="botao" onclick="ativo()">
+                                <img src="img/github.png" alt="github" class="imagem" id="github">
+                            </button>
+                        </a>
+                </li>
+                <li>
+                        <a href="#" class="link__botao">
+                            <button class="botao" onclick="ativo()">
+                                <img src="img/linkedin.png" alt="linkedin" class="linkedin imagem">
+                            </button>
+                        </a>
+                </li>
+                <li>
+                    <a href="#" class="link__botao">
+                        <button class="botao" onclick="ativo()">
+                            <img src="img/curriculo.png" alt="curriculo" class="curriculo imagem">
+                        </button>
+                    </a>
+                </li>
                 </ul>
             </div>
             <p class="header__descricao">Tenho 19 anos, sou desenvolvedor frontend, posssuo 1 ano de experiência trabalhando
                 como freelancer.</p>
                 <ul class="links__mobile">
                     <li>
-                            <a href="#" class="link__botao"><img src="img/github.png" alt="github" class="imagem"></a>
+                            <a href="#" class="link__botao">
+                                <button class="botao" onclick="ativo()">
+                                    <img src="img/github.png" alt="github" class="imagem" id="github">
+                                </button>
+                            </a>
                     </li>
                     <li>
-                            <a href="#" class="link__botao"><img src="img/linkedin.png" alt="linkedin" class="imagem"></a>
+                            <a href="#" class="link__botao">
+                                <button class="botao" onclick="ativo()">
+                                    <img src="img/linkedin.png" alt="linkedin" class="linkedin imagem">
+                                </button>
+                            </a>
                     </li>
                     <li>
-                        <a href="#" class="link__botao"><img src="img/curriculo.png" alt="curriculo" class="imagem"></a>
+                        <a href="#" class="link__botao">
+                            <button class="botao" onclick="ativo()">
+                                <img src="img/curriculo.png" alt="curriculo" class="curriculo imagem">
+                            </button>
+                        </a>
                     </li>
                 </ul>
         
@@ -61,11 +85,13 @@
             <a href="#" class="projetos__link">
                 <h2 class="projetos__titulo">Projeto Fokus</h2>
             </a>
-            <div class="projetos__container__mobile">
-                <img src="img/fokus-mobile.png" alt="alurabooks mobile" class="projetos__container__imagem imagem__mobile">
-                <img src="img/fokus-tablet.png" alt="alurabooks tablet" class="projetos__container__imagem imagem__tablet" >
+            <div class="projetos__container__total">
+                <div class="projetos__container__mobile">
+                    <img src="img/fokus-mobile.png" alt="alurabooks mobile" class="projetos__container__imagem imagem__mobile">
+                    <img src="img/fokus-tablet.png" alt="alurabooks tablet" class="projetos__container__imagem imagem__tablet" >
+                </div>
+                <img src="img/fokus-desktop.png" alt="alurabooks desktop" class="projetos__imagem">
             </div>
-            <img src="img/fokus-desktop.png" alt="alurabooks desktop" class="projetos__imagem">
 
         </section>
         <section class="projetos">
@@ -73,11 +99,13 @@
             <a href="#" class="projetos__link">
                 <h2 class="projetos__titulo">Projeto AluraBooks</h2>
             </a>
-            <div class="projetos__container__mobile">
-                <img src="img/alurabooks-mobile.png" alt="alurabooks mobile" class="projetos__container__imagem imagem__mobile">
-                <img src="img/alurabooks-tablet.png" alt="alurabooks tablet" class="projetos__container__imagem imagem__tablet">
+            <div class="projetos__container__total">
+                <div class="projetos__container__mobile">
+                    <img src="img/alurabooks-mobile.png" alt="alurabooks mobile" class="projetos__container__imagem imagem__mobile">
+                    <img src="img/alurabooks-tablet.png" alt="alurabooks tablet" class="projetos__container__imagem imagem__tablet">
+                </div>
+                <img src="img/alurabooks-desktop.png" alt="alurabooks desktop" class="projetos__imagem">
             </div>
-            <img src="img/alurabooks-desktop.png" alt="alurabooks desktop" class="projetos__imagem">
 
         </section>
 

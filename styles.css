@@ -2,7 +2,7 @@
 
 :root {
 	--fundo: #ffff;
-	--destaque: rgb(82, 175, 238);
+	--destaque: #4295FF;
 	--preto: black;
 	--inter : "inter";
 }
@@ -26,6 +26,11 @@
 	font-weight: 700;
 	font-size:50px;
 	text-transform: uppercase;
+}
+
+.botao{
+	border: 0;
+	background-color: var(--fundo);
 }
 
 
@@ -195,6 +200,34 @@
 		font-size: 110px;
 	}
 
+	.projetos{
+		height: 100vh;
+	}
 
-	
+	.projetos__titulo{
+		padding:1em 0em 0em 0em ;
+	}
+	.projetos__container__mobile{
+		gap: 2em;
+	}
+
+	.projetos__container__total{
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		gap: 0em;
+		margin-bottom: 10em;
+		
+	}
+
+	.imagem__mobile{
+		width: auto;
+	}
+	.imagem__tablet{
+		width: auto;
+	}
+	.projetos__imagem{
+		width: auto;
+		margin-bottom: 0;
+	}
 }
