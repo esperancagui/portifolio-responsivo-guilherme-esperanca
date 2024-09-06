@@ -1,3 +1,147 @@
-@use 'abstract/root';
-@use 'abstract/vari';
-@use 'components/header';
+$fonte: "inter", sans-serif;
+$destaque: #0D6EFD;
+$preto: #323233;
+$zoom-scale: 1.1;
+$transition-duration: 0.3s;
+
+
+
+body{
+    font-family: $fonte;
+    color: $preto;
+}
+
+header{
+    h1{
+        b{
+            font-size: 20px;
+        }
+        strong{
+            text-transform: uppercase;
+            font-size: 48px;
+            b{
+                font-weight: bold;
+                color: $destaque;
+                font-size: 48px;
+            }
+        }
+    }
+    p{
+        font-size: 16px;
+        
+    }
+}
+
+.sessao{
+   
+    ul{
+        list-style: none;
+        li{
+            a{
+                font-size: 40px;
+            }
+        }
+    }
+    nav{
+        font-size: 16px;
+    }
+}
+
+.tecnologias{
+    h2{
+        text-transform: uppercase;
+    }
+    .icon{
+        font-size: 200px;
+    }
+}
+
+.card{
+    border: none;
+    h4{
+        font-size: 16px;
+    }
+}
+
+.projetos{
+    h2{
+        text-transform: uppercase;
+    }
+}
+
+.card{
+    transition: transform $transition-duration ease-in-out;
+
+  &:hover {
+    transform: scale($zoom-scale);
+  }
+}
+
+footer{
+    border-top: 1px solid $preto;
+    p{
+        font-size: 14px;
+    }
+    
+}
+
+
+
+@media  screen and (min-width: 768px) {
+    header{
+
+        h1{
+
+            b{
+                font-size: 22px;
+            }
+            strong{
+                text-transform: uppercase;
+                font-size: 64px;
+                b{
+                    font-weight: bold;
+                    color: $destaque;
+                    font-size: 64px;
+                }
+            }
+        }
+        p{
+            font-size: 18px;
+            
+        }
+    }
+}
+
+@media  screen and (min-width: 1200px) {
+    header{
+        height: 100vh;
+        padding: 0 8em;
+        h1{
+
+            b{
+                font-size: 28px;
+            }
+            strong{
+                text-transform: uppercase;
+                font-size: 80px;
+                b{
+                    font-weight: bold;
+                    color: $destaque;
+                    font-size: 80px;
+                }
+            }
+        }
+        p{
+            font-size: 20px;
+            
+        }
+    }
+
+    .tecnologias{
+        height: 80vh;
+    }
+
+    .projetos{
+        height: 100vh;
+    }
+}

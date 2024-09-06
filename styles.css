@@ -1,21 +1,107 @@
 body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: #ffffff;
-  font-family: "Inter", sans-serif;
-  color: #242424;
+  font-family: "inter", sans-serif;
+  color: #323233;
 }
 
-header {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-header h1 {
-  font-size: 5rem;
+header h1 b {
+  font-size: 20px;
 }
 header h1 strong {
+  text-transform: uppercase;
+  font-size: 48px;
+}
+header h1 strong b {
   font-weight: bold;
-  color: #0092F3;
+  color: #0D6EFD;
+  font-size: 48px;
+}
+header p {
+  font-size: 16px;
+}
+
+.sessao ul {
+  list-style: none;
+}
+.sessao ul li a {
+  font-size: 40px;
+}
+.sessao nav {
+  font-size: 16px;
+}
+
+.tecnologias h2 {
+  text-transform: uppercase;
+}
+.tecnologias .icon {
+  font-size: 200px;
+}
+
+.card {
+  border: none;
+}
+.card h4 {
+  font-size: 16px;
+}
+
+.projetos h2 {
+  text-transform: uppercase;
+}
+
+.card {
+  transition: transform 0.3s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  border-top: 1px solid #323233;
+}
+footer p {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  header h1 b {
+    font-size: 22px;
+  }
+  header h1 strong {
+    text-transform: uppercase;
+    font-size: 64px;
+  }
+  header h1 strong b {
+    font-weight: bold;
+    color: #0D6EFD;
+    font-size: 64px;
+  }
+  header p {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  header {
+    height: 100vh;
+    padding: 0 8em;
+  }
+  header h1 b {
+    font-size: 28px;
+  }
+  header h1 strong {
+    text-transform: uppercase;
+    font-size: 80px;
+  }
+  header h1 strong b {
+    font-weight: bold;
+    color: #0D6EFD;
+    font-size: 80px;
+  }
+  header p {
+    font-size: 20px;
+  }
+  .tecnologias {
+    height: 80vh;
+  }
+  .projetos {
+    height: 100vh;
+  }
 }/*# sourceMappingURL=styles.css.map */
