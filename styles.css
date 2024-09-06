@@ -61,6 +61,13 @@ footer p {
   font-size: 14px;
 }
 
+[data-bs-theme=dark] {
+  color: #DEE2E6;
+}
+[data-bs-theme=dark] b {
+  color: #6EA8FE;
+}
+
 @media screen and (min-width: 768px) {
   header h1 b {
     font-size: 22px;

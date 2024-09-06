@@ -1,6 +1,8 @@
 $fonte: "inter", sans-serif;
 $destaque: #0D6EFD;
+$destque-dark: #6EA8FE;
 $preto: #323233;
+$branco: #DEE2E6;
 $zoom-scale: 1.1;
 $transition-duration: 0.3s;
 
@@ -83,6 +85,13 @@ footer{
         font-size: 14px;
     }
     
+}
+
+[data-bs-theme="dark"]{
+    color: $branco;
+    b{
+        color: $destque-dark;
+    }
 }
 
 
