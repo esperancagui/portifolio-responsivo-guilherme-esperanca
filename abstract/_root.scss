@@ -1,0 +1,11 @@
+@use 'vari';
+@use 'root';
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: vari.$branco;
+    font-family: 'Inter', sans-serif;
+    color: vari.$preto;
+}

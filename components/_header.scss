@@ -1,0 +1,15 @@
+@use '../abstract/vari';
+
+header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    h1{
+        font-size: 5rem;
+        strong{
+            font-weight: bold;
+            color: vari.$preto;
+        }
+    }
+}
